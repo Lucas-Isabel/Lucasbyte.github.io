@@ -87,17 +87,27 @@ section h2 {
     flex-wrap: nowrap;
     overflow-x: scroll;
     scrollbar-width: thin; /* Para navegadores baseados em Gecko, como o Firefox */
-    scrollbar-color: darkgrey lightgrey; /* Cor da barra e da alça, ajuste conforme necessário */
-    -webkit-scrollbar-width: thin; /* Para navegadores WebKit, como Chrome e Safari */
-    -webkit-scrollbar-thumb: lightgrey; /* Cor da alça para navegadores WebKit */
-    -webkit-scrollbar-track: darkgrey; 
+    scrollbar-color: darkblue lightblue; /* Cor da barra e da alça, ajuste conforme necessário */
     gap: 5vw;
     justify-content: flex-start;
     align-items: center;
-    
 }
 
+.carousel-container-destaques{
+    justify-content: center;
+}
 
+/*
+-webkit-scrollbar-{thin;}  Para navegadores WebKit, como Chrome e Safari 
+-webkit-scrollbar-thumb{ lightblue;}  Cor da alça para navegadores WebKit 
+-webkit-scrollbar-track{ darkblue;} 
+*/
+.carousel-container::-webkit-scrollbar{
+    background-color: #009df1;
+}
+.carousel-container::-webkit-scrollbar-thumb{
+    background-color: #005ea3;
+}
 
 .carousel-container-destaques{
     background-color:#009df1;
