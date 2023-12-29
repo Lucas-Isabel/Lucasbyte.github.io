@@ -94,7 +94,7 @@ section h2 {
 }
 
 .carousel-container-destaques{
-    justify-content: center;
+    justify-content: start;
 }
 
 /*
@@ -102,10 +102,17 @@ section h2 {
 -webkit-scrollbar-thumb{ lightblue;}  Cor da alça para navegadores WebKit 
 -webkit-scrollbar-track{ darkblue;} 
 */
-.carousel-container::-webkit-scrollbar{
+.carousel-container::-webkit-scrollbar {
+    background-color: #009df1;
+}
+
+.carousel-container-destaques::-webkit-scrollbar{
     background-color: #009df1;
 }
 .carousel-container::-webkit-scrollbar-thumb{
+    background-color: #005ea3;
+}
+.carousel-container-destaques::-webkit-scrollbar-thumb{
     background-color: #005ea3;
 }
 
@@ -146,6 +153,11 @@ section h2 {
     text-align: center;
     min-height: 40vh;
     max-height: 40vh;
+}
+
+.carousel-container-destaques .produto{
+    min-width: 45%;
+    max-width: 45%;
 }
 .central-div{
     display: flex;
