@@ -1,0 +1,8 @@
+PDV
+Voltado para uma operação dinâmica de registro de vendas, sem a necessidade de uso do mouse.
+
+Gerenciamento
+O Software Retaguarda atende empresas de pequeno porte que esta no simples como também no lucro presumido ou real.
+
+Arquivos XML
+Geracao automatica dos arquivos da NOTA FISCAL PAULISTA, com controle de backup por impressora/data..
