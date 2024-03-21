@@ -1,16 +1,43 @@
 [
         {
-            "codigo": "000001", 
+            "codigo": "000001",
+            "setor": "FLV", 
             "nome": "Batata",
             "venda": "pesavel",
             "preco": "1000",
             "validade": "200"
         },
         {
-            "codigo": "000001",
+            "codigo": "000002",
+            "setor": "Padaria",
             "nome": "Baguete",
             "venda": "unidade",
             "preco": "999",
             "validade": "2"
+        },
+        {
+            "codigo": "000003",
+            "setor": "FLV", 
+            "nome": "Cebola",
+            "venda": "pesavel",
+            "preco": "1000",
+            "validade": "200"
+        },
+        {
+            "codigo": "000004",
+            "setor": "Padaria",
+            "nome": "Donuts",
+            "venda": "unidade",
+            "preco": "999",
+            "validade": "2"
+        },
+        {
+            "codigo": "000005",
+            "setor": "Acougue", 
+            "nome": "Picanha",
+            "venda": "pesavel",
+            "preco": "1000",
+            "validade": "200"
         }
+
 ]
