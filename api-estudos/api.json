@@ -1,16 +1,16 @@
-{
-    "plus": {
-        "000001" : {
+[
+        {
+            "codigo": "000001", 
             "nome": "Batata",
             "venda": "pesavel",
             "preco": "1000",
             "validade": "200"
         },
-        "000002" : {
+        {
+            "codigo": "000001",
             "nome": "Baguete",
             "venda": "unidade",
             "preco": "999",
             "validade": "2"
         }
-    }
-}
+]
