@@ -1,17 +1,150 @@
 [
     {
-        "nome": "Danilo",
-        "idade": 18,
-        "cep": "00000-000"
+      "nome": "Danilo",
+      "idade": 18,
+      "cep": "12345-678",
+      "cargo": "Desenvolvedor",
+      "apresentacao": "Me chamo Danilo e tenho 2 anos de experiencia com desenvolvimento front-end"
     },
     {
-        "nome": "Gabriel",
-        "idade": 23,
-        "cep": "00000-000"
+      "nome": "Mariana",
+      "idade": 25,
+      "cep": "54321-987",
+      "cargo": "Analista de Dados",
+      "apresentacao": "Olá, sou a Mariana e tenho experiência em análise de dados e machine learning."
     },
     {
-        "nome": "Felipe",
-        "idade": 12,
-        "cep": "00000-000"
+      "nome": "Rafael",
+      "idade": 30,
+      "cep": "98765-432",
+      "cargo": "Engenheiro de Software",
+      "apresentacao": "Meu nome é Rafael e trabalho como engenheiro de software há 8 anos."
+    },
+    {
+      "nome": "Juliana",
+      "idade": 22,
+      "cep": "13579-246",
+      "cargo": "Web Designer",
+      "apresentacao": "Oi, eu sou a Juliana e tenho experiência em design de interfaces web."
+    },
+    {
+      "nome": "Rodrigo",
+      "idade": 28,
+      "cep": "24680-135",
+      "cargo": "Analista Financeiro",
+      "apresentacao": "Olá, sou o Rodrigo e trabalho na área financeira há 5 anos, com foco em análise de dados."
+    },
+    {
+      "nome": "Camila",
+      "idade": 35,
+      "cep": "98765-432",
+      "cargo": "Gerente de Projetos",
+      "apresentacao": "Me chamo Camila e tenho experiência em gerenciamento de projetos e liderança de equipes."
+    },
+    {
+      "nome": "Pedro",
+      "idade": 40,
+      "cep": "75312-468",
+      "cargo": "Analista de Sistemas",
+      "apresentacao": "Oi, sou o Pedro e trabalho como analista de sistemas há mais de 15 anos."
+    },
+    {
+      "nome": "Luiza",
+      "idade": 28,
+      "cep": "36987-541",
+      "cargo": "UX/UI Designer",
+      "apresentacao": "Me chamo Luiza e tenho experiência em design de experiência do usuário e interfaces gráficas."
+    },
+    {
+      "nome": "Fernando",
+      "idade": 32,
+      "cep": "98765-123",
+      "cargo": "Desenvolvedor Full Stack",
+      "apresentacao": "Olá, sou o Fernando e trabalho como desenvolvedor full stack, com conhecimentos em várias tecnologias."
+    },
+    {
+      "nome": "Aline",
+      "idade": 27,
+      "cep": "75321-987",
+      "cargo": "Analista de Marketing",
+      "apresentacao": "Me chamo Aline e tenho experiência em marketing digital e análise de métricas."
+    },
+    {
+      "nome": "Lucas",
+      "idade": 24,
+      "cep": "15948-753",
+      "cargo": "Designer Gráfico",
+      "apresentacao": "Oi, eu sou o Lucas e trabalho como designer gráfico, criando identidades visuais e peças publicitárias."
+    },
+    {
+      "nome": "Gabriela",
+      "idade": 29,
+      "cep": "75369-258",
+      "cargo": "Analista de RH",
+      "apresentacao": "Olá, sou a Gabriela e trabalho na área de recursos humanos, com foco em recrutamento e seleção."
+    },
+    {
+      "nome": "Mateus",
+      "idade": 26,
+      "cep": "85236-974",
+      "cargo": "Analista de Qualidade de Software",
+      "apresentacao": "Me chamo Mateus e tenho experiência em garantia de qualidade de software, testes e automação."
+    },
+    {
+      "nome": "Isabela",
+      "idade": 23,
+      "cep": "36987-654",
+      "cargo": "Analista de Suporte Técnico",
+      "apresentacao": "Oi, sou a Isabela e trabalho como analista de suporte técnico, ajudando clientes com problemas técnicos."
+    },
+    {
+      "nome": "Carlos",
+      "idade": 31,
+      "cep": "98765-321",
+      "cargo": "Analista de Negócios",
+      "apresentacao": "Olá, sou o Carlos e tenho experiência em análise de negócios, mapeamento de processos e requisitos de sistemas."
+    },
+    {
+      "nome": "Vitória",
+      "idade": 28,
+      "cep": "45698-123",
+      "cargo": "Gerente de Vendas",
+      "apresentacao": "Me chamo Vitória e tenho experiência em gestão de equipes de vendas e estratégias comerciais."
+    },
+    {
+      "nome": "Marcos",
+      "idade": 33,
+      "cep": "75369-852",
+      "cargo": "Engenheiro de Produção",
+      "apresentacao": "Oi, sou o Marcos e trabalho como engenheiro de produção, otimizando processos e aumentando a eficiência operacional."
+    },
+    {
+      "nome": "Natália",
+      "idade": 30,
+      "cep": "85236-987",
+      "cargo": "Analista de Compras",
+      "apresentacao": "Olá, sou a Natália e tenho experiência em compras, negociação com fornecedores e controle de estoque."
+    },
+    {
+      "nome": "Ricardo",
+      "idade": 29,
+      "cep": "98765-852",
+      "cargo": "Consultor de TI",
+      "apresentacao": "Me chamo Ricardo e sou consultor de tecnologia da informação, auxiliando empresas na implementação de soluções tecnológicas."
+    },
+    {
+      "nome": "Ana",
+      "idade": 27,
+      "cep": "45698-147",
+      "cargo": "Analista de Finanças",
+      "apresentacao": "Oi, sou a Ana e trabalho como analista financeira, fazendo análises de custos e planejamento financeiro."
+    },
+    {
+      "nome": "Gustavo",
+      "idade": 26,
+      "cep": "75369-741",
+      "cargo": "Desenvolvedor Mobile",
+      "apresentacao": "Olá, sou o Gustavo e tenho experiência em desenvolvimento de aplicativos mobile para iOS"
     }
 ]
+  
