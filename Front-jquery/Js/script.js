@@ -7,20 +7,23 @@ $(document).ready(function () {
         const tableBody = $("#Cadastros").find("tbody");
         tableBody.empty(); // Limpa o corpo da tabela antes de inserir os dados
 
-        cadastros.forEach(candidato => {
+        cadastros.forEach((candidato, index) => {
             const linha = `
                 <tr>
                     <td>${candidato.nome}</td>
                     <td>${candidato.idade}</td>
                     <td class="cargo">${candidato.cargo}</td>
-                    <td class="carta truncate">${candidato.apresentacao}</td>
+                    <td class="carta truncate" data-index="${index}">${candidato.apresentacao}</td>
                 </tr>`;
             tableBody.append(linha);
         });
-        $('body').on("click", 'td.carta', function () {
-            $(this).toggleClass('truncate');
-        });
     }
+
+    $('body').on("click", '.carta', function () {
+        const index = $(this).data('index');
+        $('.carta').eq(index).toggleClass('truncate');
+    });
+    
 
     // Função de comparação para ordenar por nome
     function compararPorNome(a, b) {
@@ -133,6 +136,3 @@ $(document).ready(function () {
 
 });
 
-$('body').on("click", 'td.carta', function () {
-    $(this).toggleClass('truncate');
-});
