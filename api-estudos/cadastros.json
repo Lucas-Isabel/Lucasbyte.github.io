@@ -1,0 +1,17 @@
+[
+    {
+        "nome": "Danilo",
+        "idade": 18,
+        "cep": "00000-000"
+    },
+    {
+        "nome": "Gabriel",
+        "idade": 23,
+        "cep": "00000-000"
+    },
+    {
+        "nome": "Felipe",
+        "idade": 12,
+        "cep": "00000-000"
+    }
+]
