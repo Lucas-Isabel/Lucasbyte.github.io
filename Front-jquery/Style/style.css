@@ -1,4 +1,30 @@
 :root{
-    background-color: blueviolet;
-    color: white;
+    background-color: #f5f5f5;
+    color: black;
 }
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table, tbody, thead, tr{
+    max-width: 70vw;
+}
+.carta{
+    width: 25vw;
+    word-wrap: break-word;
+}
+.cargo{
+    min-width: 150px;
+}
+
+main {
+    flex: 1 0 auto;
+  }

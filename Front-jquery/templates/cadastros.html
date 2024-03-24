@@ -12,7 +12,7 @@
 <body>
 
   <header>
-    <nav>
+    <nav  class="teal">
       <ul>
         <li><a href="../index.html">Início</a></li>
       </ul>
@@ -20,42 +20,47 @@
   </header>
   
   <main>
-    <section id="Cadastros">
-      <h1>Cadastros</h1>
-      <table class="centered bordered">
+    <section id="Cadastros" class="center">
+      <h1 class="center">Cadastros</h1>
+      <table class="bordered highlight responsive-table">
         <thead>
           <tr>
-            <th>Nome</th>
-            <th>Idade</th>
-            <th>Cargo</th>
-            <th>CEP</th>
+            <th><a class="btn waves-effect waves-light"><span class="OderByName">Nome</span></a></th>
+            <th><a class="btn waves-effect waves-light"><span class="OderByAge">Idade</span></a></th>
+            <th><a class="btn waves-effect waves-light"><span class="OderByProf">Cargo</span></a></th>
             <th>Carta de Apresentação</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>João da Silva</td>
-            <td>30</td>
-            <td>Desenvolvedor</td>
-            <td>12345-678</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor tristique leo vitae tristique.</td>
-          </tr>
-          <tr>
-            <td>Maria Oliveira</td>
-            <td>25</td>
-            <td>Analista de Marketing</td>
-            <td>54321-876</td>
-            <td>Integer vitae justo auctor, ullamcorper ante sit amet, tincidunt nulla.</td>
-          </tr>
           <!-- Adicione mais linhas conforme necessário -->
         </tbody>
       </table>
     </section>
   </main>
   
-  <footer>
-    <p>&copy; 2024 Nome da Empresa. Todos os direitos reservados.</p>
+  <footer class="page-footer teal darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Lucas Byte</h5>
+          <p class="grey-text text-lighten-4">Conheça mais projetos do Portifolio</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Portifolio</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" target="_blank" href="https://lucasbyte.github.io/impera/">Impera</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Lucasbyte
+      <a class="grey-text text-lighten-4 right" href="#!">Mais exemplos</a>
+      </div>
+    </div>
   </footer>
+
   <script src="../Js/jquery.js"></script>
   <script src="../Js/script.js"></script>
 </body>
