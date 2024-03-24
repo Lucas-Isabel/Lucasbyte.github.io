@@ -1,45 +1,138 @@
-exemplo = [
-    {
-        "nome": "Danilo",
-        "idade": 18,
-        "cep": "12345-678",
-        "cargo": "Desenvolvedor",
-        "apresentacao": "Me chamo Danilo e tenho 2 anos de experiencia com desenvolvimento front-end"
-    }
-]
+$(document).ready(function () {
+    const url = 'https://lucasbyte.github.io/api-estudos/cadastros.json';
+    let dados = []; // Inicializando como array vazio
 
-const url = 'https://lucasbyte.github.io/api-estudos/cadastros.json';
-$.ajax({
-    url: url,
-    type: 'GET',
-    dataType: 'json',
-    success: function(data) {
-        running(data)
+    // Função para gerar a tabela de cadastros
+    function gerarTabela(cadastros) {
+        const tableBody = $("#Cadastros").find("tbody");
+        tableBody.empty(); // Limpa o corpo da tabela antes de inserir os dados
+
+        cadastros.forEach(candidato => {
+            const linha = `
+                <tr>
+                    <td>${candidato.nome}</td>
+                    <td>${candidato.idade}</td>
+                    <td class="cargo">${candidato.cargo}</td>
+                    <td class="carta truncate">${candidato.apresentacao}</td>
+                </tr>`;
+            tableBody.append(linha);
+        });
+        $('body').on("click", 'td.carta', function () {
+            $(this).toggleClass('truncate');
+        });
     }
+
+    // Função de comparação para ordenar por nome
+    function compararPorNome(a, b) {
+        const nomeA = a.nome.toUpperCase();
+        const nomeB = b.nome.toUpperCase();
+
+        if (nomeA < nomeB) {
+            return -1;
+        }
+        if (nomeA > nomeB) {
+            return 1;
+        }
+        return 0;
+    }
+
+    // Função de comparação para ordenar por idade
+    function compararPorIdade(a, b) {
+        return a.idade - b.idade;
+    }
+
+    // Função de comparação para ordenar por cargo
+    function compararPorCargo(a, b) {
+        const cargoA = a.cargo.toUpperCase();
+        const cargoB = b.cargo.toUpperCase();
+
+        if (cargoA < cargoB) {
+            return -1;
+        }
+        if (cargoA > cargoB) {
+            return 1;
+        }
+        return 0;
+    }
+
+    // Função principal para ordenar e gerar a tabela conforme a escolha do usuário
+    function ordenarECriarTabela(ordem) {
+        let cadastrosOrdenados = [];
+
+        switch (ordem) {
+            case 'nome':
+                cadastrosOrdenados = dados.slice().sort(compararPorNome);
+                break;
+            case 'idade':
+                cadastrosOrdenados = dados.slice().sort(compararPorIdade);
+                break;
+            case 'cargo':
+                cadastrosOrdenados = dados.slice().sort(compararPorCargo);
+                break;
+            default:
+                cadastrosOrdenados = dados.slice(); // Caso a ordem não seja especificada, mantém a ordem original
+                break;
+        }
+
+        gerarTabela(cadastrosOrdenados);
+    }
+
+    $(".OderByName").on("click", function () {
+        // Requisição AJAX para obter os dados
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                dados = data; // Armazena os dados na variável dados
+
+                // Exemplo de uso: chame a função ordenarECriarTabela('nome') para ordenar por nome, 'idade' para ordenar por idade, ou 'cargo' para ordenar por cargo
+                ordenarECriarTabela('nome'); // Chamando a função inicialmente para ordenar por nome
+            },
+            error: function (error) {
+                console.log('Erro ao carregar os dados:', error)
+            }
+        })
+    })
+
+    $(".OderByAge").on("click", function () {
+        // Requisição AJAX para obter os dados
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                dados = data; // Armazena os dados na variável dados
+
+                // Exemplo de uso: chame a função ordenarECriarTabela('nome') para ordenar por nome, 'idade' para ordenar por idade, ou 'cargo' para ordenar por cargo
+                ordenarECriarTabela('idade'); // Chamando a função inicialmente para ordenar por nome
+            },
+            error: function (error) {
+                console.log('Erro ao carregar os dados:', error)
+            }
+        })
+    })
+
+    $(".OderByProf").on("click", function () {
+        // Requisição AJAX para obter os dados
+        $.ajax({
+            url: url,
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                dados = data; // Armazena os dados na variável dados
+
+                // Exemplo de uso: chame a função ordenarECriarTabela('nome') para ordenar por nome, 'idade' para ordenar por idade, ou 'cargo' para ordenar por cargo
+                ordenarECriarTabela('cargo'); // Chamando a função inicialmente para ordenar por nome
+            },
+            error: function (error) {
+                console.log('Erro ao carregar os dados:', error)
+            }
+        })
+    })
+
 });
 
-function insereCadastro(Candidato) {
-    var tableBody = $("#Cadastros").find("tbody");
-    nome = Candidato["nome"]
-    console.log(nome)
-    idade = Candidato["idade"]
-    cep = Candidato["cep"]
-    cargo = Candidato["cargo"]
-    apresentacao = Candidato["apresentacao"]
-
-    linha = "<tr>"+
-                "<td>" + nome           + "</td>"+
-                "<td>" + idade          + "</td>"+
-                "<td>" + cep            + "</td>"+
-                "<td>" + cargo          + "</td>"+
-                "<td>" + apresentacao   + "</td>"+
-            "</tr>";
-    tableBody.append(linha);
-}
-
-function running(data){
-data.forEach(pessoa => {
-    console.log(pessoa)
-    insereCadastro(pessoa)
+$('body').on("click", 'td.carta', function () {
+    $(this).toggleClass('truncate');
 });
-}
