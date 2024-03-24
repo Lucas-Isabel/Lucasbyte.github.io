@@ -23,7 +23,7 @@ $(document).ready(function () {
         const index = $(this).data('index');
         $('.carta').eq(index).toggleClass('truncate');
     });
-    
+
 
     // Função de comparação para ordenar por nome
     function compararPorNome(a, b) {
@@ -89,8 +89,8 @@ $(document).ready(function () {
             success: function (data) {
                 dados = data; // Armazena os dados na variável dados
 
-                // Exemplo de uso: chame a função ordenarECriarTabela('nome') para ordenar por nome, 'idade' para ordenar por idade, ou 'cargo' para ordenar por cargo
-                ordenarECriarTabela('nome'); // Chamando a função inicialmente para ordenar por nome
+
+                ordenarECriarTabela('nome');
             },
             error: function (error) {
                 console.log('Erro ao carregar os dados:', error)
@@ -107,8 +107,8 @@ $(document).ready(function () {
             success: function (data) {
                 dados = data; // Armazena os dados na variável dados
 
-                // Exemplo de uso: chame a função ordenarECriarTabela('nome') para ordenar por nome, 'idade' para ordenar por idade, ou 'cargo' para ordenar por cargo
-                ordenarECriarTabela('idade'); // Chamando a função inicialmente para ordenar por nome
+
+                ordenarECriarTabela('idade'); // Chamando a função inicialmente para ordenar por idade
             },
             error: function (error) {
                 console.log('Erro ao carregar os dados:', error)
@@ -125,8 +125,7 @@ $(document).ready(function () {
             success: function (data) {
                 dados = data; // Armazena os dados na variável dados
 
-                // Exemplo de uso: chame a função ordenarECriarTabela('nome') para ordenar por nome, 'idade' para ordenar por idade, ou 'cargo' para ordenar por cargo
-                ordenarECriarTabela('cargo'); // Chamando a função inicialmente para ordenar por nome
+                ordenarECriarTabela('cargo');
             },
             error: function (error) {
                 console.log('Erro ao carregar os dados:', error)
