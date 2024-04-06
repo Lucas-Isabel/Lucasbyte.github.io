@@ -1,0 +1,62 @@
+:root {
+    --white: #ffffff;
+    --coldWhite: #F1F7FF;
+    --black: #000000;
+    --darkmode-black: #000000;
+    --darkmode-ecoBlack: #1B1B25;
+    --darkmode-ecoBlack2: #2D2D39;
+    --red: #F72717;
+    --fushia: #FF007D;
+    --lila: #F1F0FF;
+    --menthe: #EBFFF9;
+    --bleu: #f1f7ff;
+    --darkmode-lightGrey: #D5D8DD;
+    --lightGrey: #D5D8DD;
+    --darkmode-grey: #6D7787;
+    --grey: #6D7787;
+    --cobalt: #0D8AFF;
+    --lightCobalt: #B0EFFF;
+    --pastelCobalt: #F1F7FF;
+    --emerald: #00A184;
+    --lightEmerald: #98F6DB;
+    --olive: #739A00;
+    --lightOlive: #DCF691;
+    --pink: #FF5978;
+    --lightPink: #FED0C8;
+    --ultraviolet: #711CFF;
+    --lightUltraViolet: #D0CCFF;
+    --gradientRed: linear-gradient(315deg,#FF007D 0%,#F72717 100%);
+}
+
+
+
+/* Estilos personalizados */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--fushia) 75%, var(--menthe) 35%);
+}
+
+.login-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.btn-custom {
+    background-color: #dc3545; /* Nova cor do botão */
+    border-color: #dc3545; /* Cor da borda do botão */
+}
+
+@media (min-width: 768px) {
+    .login-form {
+        max-width: 400px;
+    }
+}
+
